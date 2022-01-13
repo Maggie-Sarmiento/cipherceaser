@@ -2,13 +2,31 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Caesar Cipher</title>
+    <title>Cipher Caesar</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div id="root">
-      <h1>Hello world!</h1>
+    <header>
+      <h1>Cipher Caesar</h1>
+    </header>
+
+    <div class="main">
+      <form action="">
+        <label for="msg">Rot</label>
+        <input type="text" name="msg">
+      </form>
+      <form action="">
+        <label for="msg">Mensaje plano</label>
+        <input type="text" name="msg">
+        <button>Cifrar</button>
+      </form>
+      <form action="">
+        <label for="msgencrypted">Mensaje cifrado</label>
+        <input type="text" name="msgencrypted">
+        <button>Descifrar</button>
+      </form>
     </div>
+
     <script src="index.js" type="module"></script>
   </body>
 </html>
