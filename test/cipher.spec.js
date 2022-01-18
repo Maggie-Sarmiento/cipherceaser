@@ -54,7 +54,7 @@ describe('cipher', () => {
     // teste abaixo.
     //
     // it('should return " !@" for " !@"', () => {
-    //   expect(cipher.encode(33, ' !@')).toBe(' !@');
+    //   expect(cipher.encode(33, ' !@')).toBe('');
     // });
   });
 

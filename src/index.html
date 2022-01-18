@@ -4,27 +4,36 @@
     <meta charset="utf-8">
     <title>Cipher Caesar</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   </head>
   <body>
     <header>
-      <h1>Cipher Caesar</h1>
+      <nav class="header">
+        <h1>Cipher Caesar</h1>
+      </nav>
     </header>
 
     <div class="main">
-      <form action="">
-        <label for="msg">Rot</label>
-        <input type="text" name="msg">
-      </form>
-      <form action="">
-        <label for="msg">Mensaje plano</label>
-        <input type="text" name="msg">
-        <button>Cifrar</button>
-      </form>
-      <form action="">
-        <label for="msgencrypted">Mensaje cifrado</label>
-        <input type="text" name="msgencrypted">
-        <button>Descifrar</button>
-      </form>
+      <div class="displacement">
+        <form action="" onsubmit="return false">
+          <label for="msg">Desplazamiento:</label>
+          <input type="text" name="iterar" id="displacement">
+        </form>
+      </div>
+      <div class="cipher-section">
+        <form action="" class="cipher" onsubmit="return false">
+          <label for="msg" id="labelmsg">Mensaje plano</label>
+          <input type="text" name="msg" id="inputmsg">
+          <button id="buttoncipher">Cifrar</button>
+        </form>
+        <form action="" class="decipher" onsubmit="return false">
+          <label for="msgencrypted" id="labelciphermsg">Mensaje cifrado</label>
+          <input type="text" name="msgencrypted" id="inputciphermsg">
+          <button id="buttondecipher">Descifrar</button>
+        </form>
+      </div>
     </div>
 
     <script src="index.js" type="module"></script>

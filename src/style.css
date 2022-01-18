@@ -4,10 +4,122 @@
     box-sizing: border-box;
 }
 
+
 body {
+    padding: 1px;
+    background-color: #fafafa;
+    font-family: 'Roboto', sans-serif;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
     width: 100vw;
     height: 100vh;
 }
 
+.header {
+    color: #16363A;
+    background-color: #95BCCC;
+    width: 800px;
+    height: 75px;
+    border: .1px solid #7e8388;
+    box-shadow: -3px 3px 10px 0 rgba(55, 57, 60, 0.3);
+    border-radius: 25px;
+    text-align: center;
+    font-size: 30px;
+    padding-top: 5px;
+}
+ 
+.main {
+    color: #16363A;
+    background-color: #95BCCC;
+    border: 0.05px solid #7e8388;
+    box-shadow: 3px 3px 10px 0 rgba(55, 57, 60, 0.3);
+    padding: 10px;
+    width: 800px;
+    height: 500px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.displacement {
+    margin-top: 60px;
+}
+
+.cipher-section {
+    padding: 50px;
+    display: flex;
+}
+
+.cipher, .decipher {
+    display: flex;
+    flex-direction: column;
+}
+
+#displacement {
+    width: 50px;
+    height: 30px;
+    border-radius: 10px;
+    border: 0.05px solid #7e8388;
+    box-shadow: 0px 0px 5px 0 rgba(55, 57, 60, 0.3);
+    outline: #8B929A;
+    text-align: center;
+}
+
+#inputmsg, #inputciphermsg {
+    margin-top: 10px;
+    width: 300px;
+    height: 200px;
+    border-radius: 30px;
+    border: 0.05px solid #7e8388;
+    box-shadow: 0px 0px 3px 0 rgba(55, 57, 60, 0.3);
+    outline: #8B929A;
+    text-align: center;
+}
+
+#buttoncipher, #buttondecipher {
+    margin-top: 10px;
+    width: 120px;
+    height: 35px;
+    border-radius: 12px;
+    border: 1px solid #8B929A;
+    box-shadow: 0px 0px 5px 0 rgba(55, 57, 60, 0.3);
+    align-self: flex-end;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#inputmsg {
+    margin-right: 20px;
+}
+
+#inputciphermsg {
+    margin-left: 20px;
+}
+
+#buttoncipher {
+    background-color: #16363A;
+    color: #fff;
+    padding-top: 2px;
+    margin-right: 25px;
+}
+
+#buttondecipher {
+    background-color: #fff;
+    border: 0.05px solid #7e8388;
+    color: #16363A;
+    padding-top: 2px;
+    margin-left: 30px;
+}
+
+#labelmsg {
+    margin-left: 10px;
+}
+
+#labelciphermsg {
+    margin-left: 40px;
+}
