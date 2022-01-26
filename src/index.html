@@ -15,26 +15,80 @@
       </nav>
     </header>
 
-    <div class="main">
+    <div class="main" id="main-section">
       <div class="displacement">
         <form action="" onsubmit="return false">
-          <label for="msg">Desplazamiento:</label>
-          <input type="text" name="iterar" id="displacement">
+          <label for="displacement" >Desplazamiento:</label>
+          <input type="number" name="displacement" class="inputdisplacement" id="inputdisplacement">
+          <button id="buttonreset" class="buttonBasic buttonTwo">Reset</button>
         </form>
       </div>
       <div class="cipher-section">
         <form action="" class="cipher" onsubmit="return false">
           <label for="msg" id="labelmsg">Mensaje plano</label>
-          <input type="text" name="msg" id="inputmsg">
-          <button id="buttoncipher">Cifrar</button>
+          <input type="text" name="msg" id="inputmsg" placeholder="Escribe tu mensaje aqui">
+          <button id="buttoncipher" class="buttonBasic buttonOne">Cifrar</button>
         </form>
         <form action="" class="decipher" onsubmit="return false">
           <label for="msgencrypted" id="labelciphermsg">Mensaje cifrado</label>
           <input type="text" name="msgencrypted" id="inputciphermsg">
-          <button id="buttondecipher">Descifrar</button>
+          <button id="buttondecipher" class="buttonBasic buttonTwo">Descifrar</button>
         </form>
       </div>
     </div>
+
+    <div class="copy">
+      <p>© Maggie Sarmiento</p>
+    </div>
+
+    <footer>
+      <nav class="footer">
+        <div class="navfoot">
+          <input type="button" name="buttonpop1" id="popwhat" class="popwhat" value="¿Que es Cipher Ceaser?">
+          <div class="whatsectionpop">
+            <!-- <div class="popup-close">x</div> -->
+            <div class="popup-content">
+                <h3>¿Que es Cipher Ceaser?</h3>
+                <p>Cifrado cesar es una aplicación que sirve para cifrar mensajes <br> 
+                  basado en el cifrado Cesar. <br> 
+                  <br>
+                  En criptografía, también conocido como cifrado por desplazamiento,<br>  
+                  es una de las técnicas de codificación más simples y más usadas.<br>  
+                  Es un tipo de cifrado por sustitución en el que una letra en el texto<br>  
+                  original es reemplazada por otra letra que se encuentra un número fijo <br>  
+                  de posiciones más adelante en el alfabeto. <br> 
+                  Por ejemplo, con un desplazamiento de 3, la A sería sustituida por la D <br> 
+                  (situada 3 lugares a la derecha de la A ), la B 
+                  sería reemplazada por la E, etc.<br><br> 
+                  Este método debe su nombre, según Suetonio, a Julio César, que lo usaba <br>
+                  para comunicarse con sus generales.
+
+                </p>
+                <button id="buttonBackWhat" class="buttonBasic buttonTwo">Regresar</button>
+            </div>
+          </div>
+          <input type="button" name="buttonpop2" id="pophow" class="pophow" value="¿Como usar Cipher Ceaser?">
+          <div class="howsectionpop">
+            <!-- <div class="popup-close">x</div> -->
+            <div class="popuphow-content">
+                <h3>¿Como usar Cipher Ceaser?</h3>
+                <p> 
+                  En el espacio de desplazamiento se escribe el numero a desplazar <br> 
+                  en el alfabeto. <br><br>
+                  En la seccion de Mensaje plano se escribe el mensaje a cifrar, <br>
+                  en caso de usar la seccion de descifrar, aqui se mostrara <br>
+                  el resultado. <br><br>
+                  En la seccion de Mensaje cifrado se escribe el mensaje a descifrar, <br>
+                  y en caso de usar la seccion de cifrar, aqui se mostrara <br>
+                  el resultado. 
+                </p>
+                <button id="buttonBackHow" class="buttonBasic buttonTwo">Regresar</button>
+            </div>
+          </div>
+        </div>
+
+      </nav>
+    </footer>
 
     <script src="index.js" type="module"></script>
   </body>
