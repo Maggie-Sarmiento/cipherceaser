@@ -7,7 +7,7 @@
 
 body {
     padding: 1px;
-    background-color: hsla(309, 39% , 87%, 1); /* E3E4E5   Ebd1e7*/
+    background-color: rgb(224, 219, 224); /* E3E4E5   Ebd1e7*/
     font-family: 'Roboto', sans-serif;
     display: flex;
     flex-direction: column;

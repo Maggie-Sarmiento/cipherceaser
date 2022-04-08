@@ -7,8 +7,9 @@ function index(){
     document.getElementById('buttoncipher').addEventListener('click', function(){
        let displacement = document.getElementById('inputdisplacement').value
        let msg = document.getElementById('inputmsg').value
-       document.getElementById('inputciphermsg').value = cipher.encode(displacement, msg, name)
+       document.getElementById('inputciphermsg').value = cipher.encode(displacement, msg)
     })
+
 
     // evento que escucha un click y llama a las funciones que guardan el mensaje a descifrar y el desplazamiento
     document.getElementById('buttondecipher').addEventListener('click', function(){
@@ -45,7 +46,7 @@ function index(){
 }
 
 
-console.log(cipher);
+// console.log(cipher);
 
 
 

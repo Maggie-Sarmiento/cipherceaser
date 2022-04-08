@@ -1,7 +1,6 @@
 
 
 const cipher = {
- 
   // metodo que recibe los valores del mensaje y desplazamiento y los cifra
   encode(displacement, msg){
     if(displacement === null || displacement === 0){
